@@ -1,5 +1,8 @@
 {
   "name": "mog-script",
   "version": "0.0.1",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "sweet.js": "^2.2.1"
+  }
 }
