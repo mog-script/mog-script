@@ -11,11 +11,11 @@ var emojisMap = Object.keys(keywordsMap).reduce(function(obj, key) {
   return obj
 }, {})
 
-module.exports.compile = function (text) {
+module.exports.decompile = function (text) {
   return processText(keywordsMap, text, '\\b|')
 }
 
-module.exports.decompile = function (text) {
+module.exports.compile = function (text) {
   return processText(emojisMap, text, '|')
 }
 
