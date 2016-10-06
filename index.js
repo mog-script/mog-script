@@ -1,9 +1,27 @@
 var keywordsMap = {
   'function': '⚙️',
   'import': '📦',
-  'export': '🎁',
+  'export': '🛳',
   'const': '💎',
-  'from': '👈'
+  'from': '👈',
+  'debugger': '🚧',
+  'default': '⭐️',
+  'delete': '⛔️',
+  'return': '🎁',
+  'new': '✨',
+  'throw': '💥',
+  'while': '👀',
+  'switch': '🚥',
+  'break': '⚡️',
+  'case': '💼',
+  'for': '🌀',
+  'if': '❓',
+  'catch': '🙉',
+  'try': '🙊',
+  'instanceof': '👶',
+  'else': '⁉️',
+  'true': '💖',
+  'false': '💔'
 }
 
 var emojisMap = Object.keys(keywordsMap).reduce(function(obj, key) {
