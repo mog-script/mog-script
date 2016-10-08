@@ -29,18 +29,25 @@ var emojisMap = swapObjeckKeysAndValues(keywordsMap)
 module.exports.keywordsMap = keywordsMap
 module.exports.emojisMap = emojisMap
 
-module.exports.decompile = function (text) {
-  return processText(keywordsMap, text, '\\b|')
+module.exports.decompile = function (text, map) {
+  var currentMap = map || keywordsMap
+
+  return processText(currentMap, text, '\\b|')
 }
 
-module.exports.compile = function (text) {
+module.exports.compile = function (text, map) {
+  if (map) {
+    emojisMap = swapObjeckKeysAndValues(map)
+  }
+
   return processText(emojisMap, text, '|')
 }
 
-function processText (source, text, regexSeparator) {
-  const sourceRegexp = Object.keys(source).join(regexSeparator)
+function processText (sourceMap, text, regexSeparator) {
+  const sourceRegexp = Object.keys(sourceMap).join(regexSeparator)
+
   return text.replace(new RegExp(sourceRegexp, 'g'), function (match) {
-    return source[match]
+    return sourceMap[match]
   })
 }
 
