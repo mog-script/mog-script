@@ -1,5 +1,11 @@
 {
   "name": "mog-script",
   "version": "0.0.4",
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=./jasmine.json"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
 }
