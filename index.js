@@ -17,7 +17,7 @@ var keywordsMap = {
   'instanceof': '👶',
   'new': '✨',
   'return': '🎁',
-  'switch': '🚥',
+  'switch': '🚦',
   'throw': '💥',
   'true': '💗',
   'try': '🙊',
