@@ -24,10 +24,7 @@ var keywordsMap = {
   'while': '👀'
 }
 
-var emojisMap = Object.keys(keywordsMap).reduce(function(obj, key) {
-  obj[keywordsMap[key]] = key
-  return obj
-}, {})
+var emojisMap = swapObjeckKeysAndValues(keywordsMap)
 
 module.exports.keywordsMap = keywordsMap
 module.exports.emojisMap = emojisMap
@@ -45,4 +42,11 @@ function processText (source, text, regexSeparator) {
   return text.replace(new RegExp(sourceRegexp, 'g'), function (match) {
     return source[match]
   })
+}
+
+function swapObjeckKeysAndValues (obj) {
+  return Object.keys(obj).reduce(function(resultObj, key) {
+    resultObj[obj[key]] = key
+    return resultObj
+  }, {})
 }
