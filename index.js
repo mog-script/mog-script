@@ -8,7 +8,7 @@ var keywordsMap = {
   'delete': '⛔️',
   'else': '❗️',
   'export': '🛳',
-  'false': '💔'
+  'false': '💔',
   'for': '🌀',
   'from': '👈',
   'function': '⚙️',
@@ -21,13 +21,16 @@ var keywordsMap = {
   'throw': '💥',
   'true': '💗',
   'try': '🙊',
-  'while': '👀',
+  'while': '👀'
 }
 
 var emojisMap = Object.keys(keywordsMap).reduce(function(obj, key) {
   obj[keywordsMap[key]] = key
   return obj
 }, {})
+
+module.exports.keywordsMap = keywordsMap
+module.exports.emojisMap = emojisMap
 
 module.exports.decompile = function (text) {
   return processText(keywordsMap, text, '\\b|')
