@@ -2,6 +2,9 @@
   "name": "mog-script",
   "version": "0.2.1",
   "main": "index.js",
+  "bin": {
+    "💎": "./cli.js"
+  },
   "scripts": {
     "test": "node spec/jasmine-runner.js"
   },
