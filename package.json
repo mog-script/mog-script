@@ -1,8 +1,15 @@
 {
   "name": "mog-script",
-  "version": "0.0.3",
+  "version": "0.2.1",
   "main": "index.js",
   "bin": {
     "💎": "./cli.js"
+  },
+  "scripts": {
+    "test": "node spec/jasmine-runner.js"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "jasmine-spec-reporter": "^2.7.0"
   }
 }
