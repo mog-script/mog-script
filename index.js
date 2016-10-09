@@ -2,6 +2,7 @@ var keywordsMap = {
   'break': '⚡️',
   'case': '💼',
   'catch': '🙉',
+  'class': '💩',
   'const': '💎',
   'debugger': '🚧',
   'default': '⭐️',
