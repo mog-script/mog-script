@@ -37,3 +37,11 @@ process.stdin.on('data', ⚙️ (chunk) {
   }
 })
 ```
+
+You can run it with:
+
+```
+💎 🍧.💎
+```
+
+🚄
