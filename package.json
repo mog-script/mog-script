@@ -6,6 +6,15 @@
     "💎": "./cli.js",
     "mog-script": "./cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mog-script/mog-script.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mog-script/mog-script/issues"
+  },
   "scripts": {
     "test": "node spec/jasmine-runner.js"
   },
