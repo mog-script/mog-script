@@ -3,7 +3,8 @@
   "version": "0.2.2",
   "main": "index.js",
   "bin": {
-    "💎": "./cli.js"
+    "💎": "./cli.js",
+    "mog-script": "./cli.js"
   },
   "scripts": {
     "test": "node spec/jasmine-runner.js"

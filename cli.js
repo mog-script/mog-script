@@ -2,7 +2,7 @@
 require('./register')
 var path = require('path')
 
-var filename = process.argv[2].substring(process.argv[2].length - 1, 1) === '💎'
+var filename = process.argv[2].match(/\.💎$/)
   ? process.argv[2]
   : process.argv[2] + '.💎'
 
